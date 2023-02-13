@@ -1,0 +1,147 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: hsl(213, 19%, 15%);
+   max-width: 280px;
+   border-radius: 1rem;
+   padding: 2rem;
+   margin: 0 5%;
+   font-size: 15px;
+   text-align: left;
+}
+
+.title {
+    color: white;
+    font-weight: 400;
+
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+}
+
+.image {
+    background-image: url(./icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(217, 12%, 20%);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 17px;
+    height: 16px;
+    padding: 1rem;
+}
+
+.submit {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    width: 100%;
+    border: none;
+    padding: 3% 0;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.number-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.625em;
+    margin: 8% 0;
+}
+
+.rating {
+    background-color: #282e38;
+    border-radius: 50%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    color: #8e949e;
+    font-size: 1rem;
+}
+
+.rating:hover {
+    background-color: #7d8796;
+    color: white;
+    cursor: pointer;
+}
+
+.rating:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 19%, 15%);
+    max-width: 280px;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0 5%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.thank-you-image {
+    background-image: url(./illustration-thank-you.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 162px;
+    height: 108px;
+}
+
+.selected-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7% 0 5%;
+    color: hsl(30, 75%, 53%);
+    background-color: #282e38;
+    padding: 2% 5% 1%;
+    border-radius: 1rem;
+}
+
+.thank-you-title {
+    color: white;
+    margin-bottom: 3%;
+}
+
+@media (min-width: 350px) {
+    .container {
+        max-width: 430px;
+        border-radius: 2rem;
+    }
+
+    .thank-you-container {
+        max-width: 43npm install gh-pages --save-dev0px;
+        border-radius: 2rem;
+        max-width: 430px;
+    }
+
+    .rating {
+        width: 50px;
+        height: 50px;
+    }
+
+    .image {
+        padding: 1.5rem;
+    }
+
+    .selected-rating {
+        padding: 3% 6% 2%;
+        border-radius: 2rem;
+    }
+}
